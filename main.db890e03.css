@@ -1,4 +1,25 @@
-@charset "UTF-8";.validation_form_para {
+
+@charset "UTF-8";.form-item video {
+    width: 70%!important
+}
+
+.form-inputs input {
+    padding: 8px!important;
+    width: 100%!important
+}
+
+.form-inputs {
+    width: 70%!important
+}
+
+@media (max-width: 1001px) {
+    .sf-hidden {
+        display:block!important;
+        margin-top: 20px
+    }
+}
+
+.validation_form_para {
     font-size: 12px
 }
 
@@ -617,11 +638,6 @@ legend+* {
     padding: 0
 }
 
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
 ::file-selector-button {
     -webkit-appearance: button;
     font: inherit
@@ -760,7 +776,7 @@ progress {
 }
 
 .blockquote-footer:before {
-    content: "— "
+    content: " "
 }
 
 .img-fluid,.img-thumbnail {
@@ -2414,21 +2430,6 @@ progress {
     opacity: 1
 }
 
-.form-control::-webkit-file-upload-button {
-    background-color: #f8f9fa;
-    background-color: var(--bs-tertiary-bg);
-    border: 0 solid;
-    border-color: inherit;
-    border-inline-end-width:1px;border-inline-end-width:var(--bs-border-width);border-radius: 0;
-    color: #212529;
-    color: var(--bs-body-color);
-    margin: -.375rem -.75rem;
-    margin-inline-end:.75rem;padding: .375rem .75rem;
-    pointer-events: none;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-}
-
 .form-control::file-selector-button {
     background-color: #f8f9fa;
     background-color: var(--bs-tertiary-bg);
@@ -2444,19 +2445,9 @@ progress {
 }
 
 @media (prefers-reduced-motion:reduce) {
-    .form-control::-webkit-file-upload-button {
-        -webkit-transition: none;
-        transition: none
-    }
-
     .form-control::file-selector-button {
         transition: none
     }
-}
-
-.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
-    background-color: #e9ecef;
-    background-color: var(--bs-secondary-bg)
 }
 
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
@@ -2496,11 +2487,6 @@ progress {
     padding: .25rem .5rem
 }
 
-.form-control-sm::-webkit-file-upload-button {
-    margin: -.25rem -.5rem;
-    margin-inline-end:.5rem;padding: .25rem .5rem
-}
-
 .form-control-sm::file-selector-button {
     margin: -.25rem -.5rem;
     margin-inline-end:.5rem;padding: .25rem .5rem
@@ -2513,11 +2499,6 @@ progress {
     min-height: calc(1.5em + 1rem + 2px);
     min-height: calc(1.5em + 1rem + var(--bs-border-width)*2);
     padding: .5rem 1rem
-}
-
-.form-control-lg::-webkit-file-upload-button {
-    margin: -.5rem -1rem;
-    margin-inline-end:1rem;padding: .5rem 1rem
 }
 
 .form-control-lg::file-selector-button {
@@ -5948,7 +5929,6 @@ textarea.form-control-lg {
     max-width: 100%;
     pointer-events: none;
     position: absolute;
-    width: -webkit-max-content;
     width: max-content;
     z-index: var(--bs-toast-zindex)
 }
@@ -6595,7 +6575,6 @@ textarea.form-control-lg {
 }
 
 .carousel-item {
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: none;
     float: left;
@@ -7637,7 +7616,6 @@ textarea.form-control-lg {
 
 .icon-link {
     align-items: center;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: inline-flex;
     gap: .375rem;
@@ -7720,7 +7698,6 @@ textarea.form-control-lg {
 }
 
 .sticky-bottom,.sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     z-index: 1020
 }
@@ -7731,81 +7708,71 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
     .sticky-sm-top {
-        top:0
-    }
-
-    .sticky-sm-bottom,.sticky-sm-top {
-        position: -webkit-sticky;
-        position: sticky;
+        position:sticky;
+        top: 0;
         z-index: 1020
     }
 
     .sticky-sm-bottom {
-        bottom: 0
+        bottom: 0;
+        position: sticky;
+        z-index: 1020
     }
 }
 
 @media (min-width: 768px) {
     .sticky-md-top {
-        top:0
-    }
-
-    .sticky-md-bottom,.sticky-md-top {
-        position: -webkit-sticky;
-        position: sticky;
+        position:sticky;
+        top: 0;
         z-index: 1020
     }
 
     .sticky-md-bottom {
-        bottom: 0
+        bottom: 0;
+        position: sticky;
+        z-index: 1020
     }
 }
 
 @media (min-width: 992px) {
     .sticky-lg-top {
-        top:0
-    }
-
-    .sticky-lg-bottom,.sticky-lg-top {
-        position: -webkit-sticky;
-        position: sticky;
+        position:sticky;
+        top: 0;
         z-index: 1020
     }
 
     .sticky-lg-bottom {
-        bottom: 0
+        bottom: 0;
+        position: sticky;
+        z-index: 1020
     }
 }
 
 @media (min-width: 1200px) {
     .sticky-xl-top {
-        top:0
-    }
-
-    .sticky-xl-bottom,.sticky-xl-top {
-        position: -webkit-sticky;
-        position: sticky;
+        position:sticky;
+        top: 0;
         z-index: 1020
     }
 
     .sticky-xl-bottom {
-        bottom: 0
+        bottom: 0;
+        position: sticky;
+        z-index: 1020
     }
 }
 
 @media (min-width: 1400px) {
     .sticky-xxl-top {
-        top:0
-    }
-
-    .sticky-xxl-bottom,.sticky-xxl-top {
-        position: -webkit-sticky;
-        position: sticky;
+        position:sticky;
+        top: 0;
         z-index: 1020
     }
 
     .sticky-xxl-bottom {
-        bottom: 0
+        bottom: 0;
+        position: sticky;
+        z-index: 1020
     }
 }
 
@@ -8101,7 +8068,6 @@ textarea.form-control-lg {
 }
 
 .position-sticky {
-    position: -webkit-sticky!important;
     position: sticky!important
 }
 
